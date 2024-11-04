@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+  
+  <title>Mortgage Repayment</title>
+  
+  <link rel="stylesheet" href="assets/css/mortgage.css">
+  <script src="assets/js/mortgage.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="inner-container">
+
+   
+      <!--input section start-->
+      <div class="input-section">
+      
+        <div class="header">
+          <h1>Mortgage Calculator</h1>
+          <a href="/">Clear All</a>
+        </div>
+
+        <div class="amount-area">
+        <h5 class="input-header">Mortgage Amount</h5>
+          <div class="amount-section">
+            <div class="amount-icon">£</div>
+            <input class="amount-input" id="inputAmount" type="text" value="">
+          </div>
+        </div>
+        
+
+       <div class="term-rate-container">
+        <div class="term-area">
+        <h5 class="input-header">Mortgage Term</h5>
+          <div class="term-section">
+            <input class="term-input" id="inputTerm" type="text" value="">
+            <div class="term-icon">year</div>
+          </div>
+        </div>
+
+        <div class="rate-area">
+        <h5 class="input-header">Interest Rate</h5>
+          <div class="rate-section">
+            <input class="rate-input" id="inputRate" type="text" value="">
+            <div class="rate-icon">%</div>
+          </div>
+        </div>
+
+      </div>
+        
+        <div class="type-area">
+        <h5 class="input-header">Mortgage Type</h5>
+        
+         <div class="radio-buttons">
+
+            <div class="repayment-area">
+              <input type="radio" name="option" class="radio-btn">
+              <h5>Repayment</h5>
+            </div>
+
+            <div class="interest-area">
+              <input type="radio" name="option" class="radio-btn">
+              <h5>Interest Only</h5>
+            </div>
+
+         </div>
+        </div>
+
+        <div id="btnCalc" class="calc-button">
+          <img src="assets/img/calculator-image.svg" alt="">
+          <h4>Calculate Repayments</h4>
+        </div>  
+
+      </div>
+      <!--input section end-->
+
+    </div>
+ 
+  <!--container ends-->
+
+  <div class="footer">
+    <div class="inner-footer">
+      <img src="assets/img/footer-image.svg" alt="">
+      <h3>Results shown here</h3>
+      <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+    </div>
+  </div>
+
+  <div class="calc-area">
+    <div class="inner-calc-area">
+
+      <div class="intro">
+        <h3>Your results</h3>
+        <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+      </div>   
+
+      <div class="result-card">
+        <h4>Your monthly repayments</h4>
+        <p class="monthly-payment">£<span id="monthlyText"></span></p>
+        <hr>
+        <h4 class="total-header">Total you'll repay over the term</h4>
+        <p class="total-payment">£<span id="totalTxt"></span></p>
+      </div>
+        
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
